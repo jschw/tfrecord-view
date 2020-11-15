@@ -2,13 +2,15 @@
 This is a fork of the project https://github.com/EricThomson/tfrecord-view featuring a minimalistic GUI which allows browsing through the images in the dataset.
 It is also updated to work with Tensorflow >= 2.0 .
 
-Runs on macOS and Windows and probably Linux.
+![Browse example dataset](/example_dataset/TFR_View_Example.gif)
+
+Runs fine on macOS and Windows and probably Linux.
 
 ## What are TFRecord files?
 A TFRecord file is a binary format to store Tensorflow datasets in an optimized way to achieve higher performance for read operations during training (https://www.tensorflow.org/guide/data_performance). It is widely used for object detection datasets but in general, lots of other datatypes can be saved this way.
 
 ## Browsing a TFRecord file
-The fileformat is binary, so you can't easily open or unzip and take a look inside TFRecord files. But sometimes, you may want to look inside to check if preprocessing steps were successful or just what the file contains if you have chosen a meaningless filename. ;)
+The fileformat is binary, so you can't easily open or unzip it. But sometimes, you may want to take look inside and check, if preprocessing steps were successful. Or just determine what the file contains if you have chosen a meaningless filename... ;)
 
 ## Requirements
 - Tensorflow >= 2.0
@@ -31,7 +33,5 @@ As mentioned above, you can set a scale factor:
 `python3 tfrecord_view_gui.py -s 0.75`
 
 This scales down all images to 75% of their original size.
-
-
 
 
