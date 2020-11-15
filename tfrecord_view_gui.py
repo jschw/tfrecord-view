@@ -1,3 +1,16 @@
+#!/usr/bin/python
+
+"""
+TFRecord browser with pyQT GUI
+
+This script allows browsing through annotated image data in a TFRecord dataset file.
+The simple user interface based on Qt5 contains dialogs for choosing a tfrecord and (optional)
+a .pbtxt label map. Two buttons are used for browsing through the images.
+
+Author: Julian Schweigert
+Mail: julianschweigert(at)gmail.com
+"""
+
 import sys
 import os
 import argparse
